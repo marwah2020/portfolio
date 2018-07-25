@@ -8,6 +8,22 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<meta charset= "UTF-8">
 		<style>
+		* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 		body{color:teal;}
 		h3{color:pink; }
 		h1{color:red;}
@@ -57,6 +73,18 @@
 	<p id="demo"></p>
 
 			<img src=flag.png width="500" height="333">
+	<div class="row">
+  <div class="column">
+    <img src="flag.gif"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="flag.gif"  style="width:100%">
+  </div>
+  <div class="column">
+    <img src="flag.gif"  style="width:100%">
+  </div>
+</div>
+
 	</body>
 
 </html>
